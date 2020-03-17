@@ -1,7 +1,8 @@
 // implement your API here
+require('dotenv').config();
 const express = require('express');
 const db  = require('./data/db');
-const port = 5000;
+const port = process.env.PORT || 4000;
 const server = express();
 server.use(express.json());
 
